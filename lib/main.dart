@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy_three_meals_app/screens/meal_details.dart';
 import '../screens/categories_screen.dart';
 import '../screens/category_meals_screen.dart';
 
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
       ),
       home: const CategoriesScreen(),
       routes: {
-        '/category-meals':(context) => const CategoryMealsScreen(),
+        '/category-meals': (context) => const CategoryMealsScreen(),
+        '/meal-details': (context) => const MealDetails(),
       },
     );
   }
